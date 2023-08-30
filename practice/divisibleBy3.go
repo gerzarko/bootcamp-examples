@@ -1,7 +1,7 @@
 package main
 import "fmt"
 
-func main(){
+func divisible(){
 
 	for i:= 1; i< 100 ; i++{
 		if(i % 3 == 0){

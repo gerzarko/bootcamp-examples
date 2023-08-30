@@ -13,29 +13,27 @@ const (
 var option int = 0
 var value float32 = 0 
 var qsy int64 = 10
-var booleano bool = false
-var nombre string = "german"
+var booleano bool = true
 
 
-func converte(){
 
+func main(){
+	
+	fmt.Println("<!DOCTYPE html>")
+	fmt.Println("<head></head>")
+	fmt.Println("<body>")
+	
 	fmt.Println("Conversor de unidades")
 	fmt.Println("1. Millas a Kilometros")
-	fmt.Println("2. Kilometros a Millas")
-	fmt.Println("3. Farenheit a Celsius")
-	fmt.Println("4. Celsius a Farenheit")
-	fmt.Println("5. Libras a Kilogramos")
-	fmt.Println("6. Kilogramos a Libras")
+	
 	fmt.Scanf("%d", &option)
 	fmt.Println("Ingrese el valor a convertir")
 	fmt.Scanf("%f",&value)
+	
 	if(option == 1){
-		value = value * mileToKm
-		fmt.Println(value,"Km")
+		var resultado float32 =  value * mileToKm
+		fmt.Printf("+-------------------------+ \n| Miles: %0.2f \n|+-------------------------+|\n Kilometers: %0.2f       \n|+-------------------------+",resultado,value)
 	}
-	if(option ==2){
-		value = value * kmToMile
-		fmt.Println(value,"ml")
-	}	
 
-}
+	fmt.Println("</body>")
+}	
